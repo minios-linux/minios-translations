@@ -1,0 +1,518 @@
+# Portuguese translations for minios-configurator package.
+# Copyright (C) 2025 MiniOS Linux.
+# This file is distributed under the same license as the minios-configurator package.
+# crims0n <crims0n@minios.dev>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: minios-configurator 2.0\n"
+"Report-Msgid-Bugs-To: support@minios.dev\n"
+"POT-Creation-Date: 2025-07-08 18:08+0000\n"
+"PO-Revision-Date: 2025-05-26 19:45+0300\n"
+"Last-Translator: crims0n <crims0n@minios.dev>, 2025.\n"
+"Language-Team: Portuguese <translation-team-pt@lists.sourceforge.net>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/config_utils.py:42
+msgid "Failed to load config: {}"
+msgstr "Falha ao carregar a configuração: {}"
+
+#: lib/config_utils.py:95
+msgid "Failed to update config: {}"
+msgstr "Falha ao atualizar a configuração: {}"
+
+#: lib/main_configurator.py:59
+msgid "User"
+msgstr "Usuário"
+
+#: lib/main_configurator.py:60
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: lib/main_configurator.py:61
+msgid ""
+"Set the default username for the live session.\n"
+"\n"
+"• This user is created automatically at boot.\n"
+"\n"
+"See: man 7 live-config (search 'username')"
+msgstr ""
+"Defina o nome de usuário padrão para a sessão live.\n"
+"\n"
+"• Este usuário é criado automaticamente na inicialização.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'username')"
+
+#: lib/main_configurator.py:64
+msgid "Full name"
+msgstr "Nome completo"
+
+#: lib/main_configurator.py:65
+msgid ""
+"Enter the full name for the default user.\n"
+"\n"
+"• Used for display purposes (e.g., on login screens).\n"
+"\n"
+"See: man 7 live-config (search 'user-fullname')"
+msgstr ""
+"Digite o nome completo para o usuário padrão.\n"
+"\n"
+"• Usado para fins de exibição (por exemplo, em telas de login).\n"
+"\n"
+"Ver: man 7 live-config (procurar 'user-fullname')"
+
+#: lib/main_configurator.py:68
+msgid "User groups"
+msgstr "Grupos de usuário"
+
+#: lib/main_configurator.py:69
+msgid ""
+"Specify additional groups for the user, separated by commas or spaces.\n"
+"\n"
+"• Grants access to devices and features (e.g., 'audio, video, plugdev').\n"
+"\n"
+"See: man 7 live-config (search 'user-default-groups')"
+msgstr ""
+"Especifique grupos adicionais para o usuário, separados por vírgulas ou "
+"espaços.\n"
+"\n"
+"• Concede acesso a dispositivos e recursos (por exemplo, 'audio, video, "
+"plugdev').\n"
+"\n"
+"Ver: man 7 live-config (procurar 'user-default-groups')"
+
+#: lib/main_configurator.py:72
+msgid "User password"
+msgstr "Senha do usuário"
+
+#: lib/main_configurator.py:73
+msgid ""
+"Set the initial password for the default user.\n"
+"\n"
+"• Leave blank to keep the existing password.\n"
+"• Spaces are not allowed.\n"
+"\n"
+"See: man 7 live-config (search 'user-password')"
+msgstr ""
+"Defina a senha inicial para o usuário padrão.\n"
+"\n"
+"• Deixe em branco para manter a senha existente.\n"
+"• Espaços não são permitidos.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'user-password')"
+
+#: lib/main_configurator.py:77
+msgid "Root password"
+msgstr "Senha do root"
+
+#: lib/main_configurator.py:78
+msgid ""
+"Set the initial password for the root (administrator) account.\n"
+"\n"
+"• Leave blank to keep the existing password.\n"
+"• Spaces are not allowed; ignored if 'No-root mode' is enabled.\n"
+"\n"
+"See: man 7 live-config (search 'root-password')"
+msgstr ""
+"Defina a senha inicial para a conta root (administrador).\n"
+"\n"
+"• Deixe em branco para manter a senha existente.\n"
+"• Espaços não são permitidos; ignorado se o 'Modo sem root' estiver "
+"ativado.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'root-password')"
+
+#: lib/main_configurator.py:82
+msgid "Link user directories to storage"
+msgstr "Vincular diretórios de usuário ao armazenamento"
+
+#: lib/main_configurator.py:83
+msgid ""
+"If enabled, user home directories will be symlinked to persistent storage.\n"
+"\n"
+"• Helps retain user data across reboots.\n"
+"\n"
+"• FAT, NTFS only.\n"
+"\n"
+"See: man 7 live-config (search 'link-user-dirs')"
+msgstr ""
+"Se ativado, os diretórios pessoais do usuário serão vinculados (symlinked) "
+"ao armazenamento persistente.\n"
+"\n"
+"• Ajuda a reter dados do usuário entre as reinicializações.\n"
+"\n"
+"• Apenas FAT, NTFS.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'link-user-dirs')"
+
+#: lib/main_configurator.py:87
+msgid "Bind user directories to storage"
+msgstr "Montar diretórios de usuário no armazenamento"
+
+#: lib/main_configurator.py:88
+msgid ""
+"If enabled, user home directories will be bind-mounted to persistent "
+"storage.\n"
+"\n"
+"• Helps retain user data across reboots.\n"
+"\n"
+"• FAT, NTFS only.\n"
+"\n"
+"See: man 7 live-config (search 'bind-user-dirs')"
+msgstr ""
+"Se ativado, os diretórios pessoais do usuário serão montados (bind-mounted) "
+"no armazenamento persistente.\n"
+"\n"
+"• Ajuda a reter dados do usuário entre as reinicializações.\n"
+"\n"
+"• Apenas FAT, NTFS.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'bind-user-dirs')"
+
+#: lib/main_configurator.py:92
+msgid "User directories path on storage"
+msgstr "Caminho dos diretórios de usuário no armazenamento"
+
+#: lib/main_configurator.py:93
+msgid ""
+"Set the base path on persistent storage for user directories.\n"
+"\n"
+"• Example: '/minios/userdirs'.\n"
+"\n"
+"See: man 7 live-config (search 'user-dirs-path')"
+msgstr ""
+"Defina o caminho base no armazenamento persistente para os diretórios de "
+"usuário.\n"
+"\n"
+"• Exemplo: '/minios/userdirs'.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'user-dirs-path')"
+
+#: lib/main_configurator.py:97
+msgid "System"
+msgstr "Sistema"
+
+#: lib/main_configurator.py:98
+msgid "No-root mode"
+msgstr "Modo sem root"
+
+#: lib/main_configurator.py:99
+msgid ""
+"If enabled, disables the root account, enhancing security.\n"
+"\n"
+"• Prevents root login and administrator access.\n"
+"• Ideal for live sessions.\n"
+"\n"
+"See: man 7 live-config (search 'noroot')"
+msgstr ""
+"Se ativado, desabilita a conta root, aumentando a segurança.\n"
+"\n"
+"• Impede o login de root e o acesso de administrador.\n"
+"• Ideal para sessões live.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'noroot')"
+
+#: lib/main_configurator.py:103
+msgid "Hostname"
+msgstr "Nome do host"
+
+#: lib/main_configurator.py:104
+msgid ""
+"Set the computer's network name (hostname).\n"
+"\n"
+"• Allowed characters: letters, numbers, hyphens.\n"
+"• Example: 'minios-pc'.\n"
+"\n"
+"See: man 7 live-config (search 'hostname')"
+msgstr ""
+"Defina o nome de rede do computador (hostname).\n"
+"\n"
+"• Caracteres permitidos: letras, números, hífens.\n"
+"• Exemplo: 'minios-pc'.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'hostname')"
+
+#: lib/main_configurator.py:108
+msgid "Locales"
+msgstr "Idiomas"
+
+#: lib/main_configurator.py:109
+msgid ""
+"Set system language(s) and regional settings.\n"
+"\n"
+"• Enter locale codes separated by commas (e.g. 'de_DE.UTF-8, en_US.UTF-8').\n"
+"• The first locale is treated as default.\n"
+"\n"
+"See: man 7 live-config (search 'locales')"
+msgstr ""
+"Defina o(s) idioma(s) do sistema e as configurações regionais.\n"
+"\n"
+"• Insira os códigos de localidade separados por vírgulas (ex: 'de_DE.UTF-8, "
+"en_US.UTF-8').\n"
+"• A primeira localidade é tratada como padrão.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'locales')"
+
+#: lib/main_configurator.py:113
+msgid "Timezone"
+msgstr "Fuso horário"
+
+#: lib/main_configurator.py:114
+msgid ""
+"Set the system timezone (e.g., 'Europe/Berlin', 'America/New_York').\n"
+"\n"
+"• Affects system clock and displayed times.\n"
+"\n"
+"See: man 7 live-config (search 'timezone')"
+msgstr ""
+"Defina o fuso horário do sistema (por exemplo, 'Europe/Berlin', 'America/"
+"New_York').\n"
+"\n"
+"• Afeta o relógio do sistema e os horários exibidos.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'timezone')"
+
+#: lib/main_configurator.py:117
+msgid "Default systemd target"
+msgstr "Target padrão do systemd"
+
+#: lib/main_configurator.py:118
+msgid ""
+"Set the default boot target for systemd:\n"
+"• 'graphical' – start with a desktop.\n"
+"• 'multi-user' – console mode.\n"
+"• 'rescue' – minimal rescue mode.\n"
+"\n"
+"See: man systemd.special (search for 'target')"
+msgstr ""
+"Defina o destino de inicialização padrão para o systemd:\n"
+"• 'graphical' – iniciar com um ambiente de desktop.\n"
+"• 'multi-user' – modo console.\n"
+"• 'rescue' – modo de recuperação mínimo.\n"
+"\n"
+"Ver: man systemd.special (procurar 'target')"
+
+#: lib/main_configurator.py:123
+msgid "Enable services"
+msgstr "Ativar serviços"
+
+#: lib/main_configurator.py:124
+msgid ""
+"List systemd services to enable at boot, separated by commas.\n"
+"\n"
+"• Example: 'ssh, NetworkManager'.\n"
+"• Use service names with or without '.service'.\n"
+"\n"
+"See: man systemctl (search 'enable')"
+msgstr ""
+"Liste os serviços do systemd a serem ativados na inicialização, separados "
+"por vírgulas.\n"
+"\n"
+"• Exemplo: 'ssh, NetworkManager'.\n"
+"• Use nomes de serviço com ou sem '.service'.\n"
+"\n"
+"Ver: man systemctl (procurar 'enable')"
+
+#: lib/main_configurator.py:128
+msgid "Disable services"
+msgstr "Desativar serviços"
+
+#: lib/main_configurator.py:129
+msgid ""
+"List systemd services to disable at boot, separated by commas.\n"
+"\n"
+"• Example: 'bluetooth, ModemManager'.\n"
+"• Use service names with or without '.service'.\n"
+"\n"
+"See: man systemctl (search 'disable')"
+msgstr ""
+"Liste os serviços do systemd a serem desativados na inicialização, separados "
+"por vírgulas.\n"
+"\n"
+"• Exemplo: 'bluetooth, ModemManager'.\n"
+"• Use nomes de serviço com ou sem '.service'.\n"
+"\n"
+"Ver: man systemctl (procurar 'disable')"
+
+#: lib/main_configurator.py:134
+msgid "Keyboard"
+msgstr "Teclado"
+
+#: lib/main_configurator.py:135
+msgid "Keyboard model"
+msgstr "Modelo de teclado"
+
+#: lib/main_configurator.py:136
+msgid ""
+"Specify the keyboard hardware model (e.g., 'pc105').\n"
+"\n"
+"• Leave blank for automatic detection.\n"
+"\n"
+"See: man 7 live-config (search 'keyboard-model')"
+msgstr ""
+"Especifique o modelo de hardware do teclado (por exemplo, 'pc105').\n"
+"\n"
+"• Deixe em branco para detecção automática.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'keyboard-model')"
+
+#: lib/main_configurator.py:139
+msgid "Keyboard layouts"
+msgstr "Layouts de teclado"
+
+#: lib/main_configurator.py:140
+msgid ""
+"List one or more keyboard layouts, separated by commas (e.g., 'us, ru').\n"
+"\n"
+"• Controls which layouts are available in the session.\n"
+"\n"
+"See: man 7 live-config (search 'keyboard-layouts')"
+msgstr ""
+"Liste um ou mais layouts de teclado, separados por vírgulas (por exemplo, "
+"'us, ru').\n"
+"\n"
+"• Controla quais layouts estão disponíveis na sessão.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'keyboard-layouts')"
+
+#: lib/main_configurator.py:143
+msgid "Keyboard options"
+msgstr "Opções de teclado"
+
+#: lib/main_configurator.py:144
+msgid ""
+"Set additional keyboard options (XKB).\n"
+"\n"
+"• Example: 'grp:alt_shift_toggle' to switch layouts with Alt+Shift.\n"
+"\n"
+"See: man 7 live-config (search 'keyboard-options')"
+msgstr ""
+"Defina opções adicionais do teclado (XKB).\n"
+"\n"
+"• Exemplo: 'grp:alt_shift_toggle' para alternar layouts com Alt+Shift.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'keyboard-options')"
+
+#: lib/main_configurator.py:147
+msgid "Keyboard variants"
+msgstr "Variantes de teclado"
+
+#: lib/main_configurator.py:148
+msgid ""
+"Specify keyboard variants for chosen layouts, separated by commas.\n"
+"\n"
+"• Customize layout (e.g., 'dvorak' for US).\n"
+"• Leave blank if not needed.\n"
+"\n"
+"See: man 7 live-config (search 'keyboard-variants')"
+msgstr ""
+"Especifique as variantes do teclado para os layouts escolhidos, separadas "
+"por vírgulas.\n"
+"\n"
+"• Personalize o layout (por exemplo, 'dvorak' para EUA).\n"
+"• Deixe em branco se não for necessário.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'keyboard-variants')"
+
+#: lib/main_configurator.py:153
+msgid "Advanced"
+msgstr "Avançado"
+
+#: lib/main_configurator.py:154
+msgid "Module mode"
+msgstr "Modo de módulo"
+
+#: lib/main_configurator.py:155
+msgid ""
+"Choose how system modules are loaded:\n"
+"• 'simple' – load modules as-is.\n"
+"• 'merged' – consolidates dpkg databases, passwd, shadow, and groups; "
+"updates caches.\n"
+"\n"
+"Usually not required unless modules are built independently.\n"
+"See: man 7 live-config (search 'module-mode')"
+msgstr ""
+"Escolha como os módulos do sistema são carregados:\n"
+"• 'simple' – carrega os módulos como estão.\n"
+"• 'merged' – consolida os bancos de dados dpkg, passwd, shadow e groups; "
+"atualiza os caches.\n"
+"\n"
+"Geralmente não é necessário, a menos que os módulos sejam construídos "
+"independentemente.\n"
+"Ver: man 7 live-config (procurar 'module-mode')"
+
+#: lib/main_configurator.py:160
+msgid "live-config command line"
+msgstr "Linha de comando do live-config"
+
+#: lib/main_configurator.py:161
+msgid ""
+"Additional boot parameters for live-config (separated by spaces).\n"
+"\n"
+"• Passed at startup to control various session aspects.\n"
+"• Example: 'boot=live live-config.debug'\n"
+"\n"
+"See: man 7 live-config (search 'cmdline')"
+msgstr ""
+"Parâmetros adicionais de inicialização para o live-config (separados por "
+"espaços).\n"
+"\n"
+"• Passados na inicialização para controlar vários aspectos da sessão.\n"
+"• Exemplo: 'boot=live live-config.debug'\n"
+"\n"
+"Ver: man 7 live-config (procurar 'cmdline')"
+
+#: lib/main_configurator.py:165
+msgid "Debug mode"
+msgstr "Modo de depuração"
+
+#: lib/main_configurator.py:166
+msgid ""
+"Activate to enable detailed debug output during boot.\n"
+"\n"
+"• Useful for troubleshooting configuration issues.\n"
+"\n"
+"See: man 7 live-config (search 'debug')"
+msgstr ""
+"Ative para habilitar a saída detalhada de depuração durante a "
+"inicialização.\n"
+"\n"
+"• Útil para solucionar problemas de configuração.\n"
+"\n"
+"Ver: man 7 live-config (procurar 'debug')"
+
+#: lib/main_configurator.py:169
+msgid "Export logs to flash drive"
+msgstr "Exportar logs para pen drive"
+
+#: lib/main_configurator.py:170
+msgid ""
+"If enabled, system logs will be copied to a connected flash drive at "
+"shutdown.\n"
+"\n"
+"• Useful for diagnostics and troubleshooting.\n"
+"\n"
+"See: https://github.com/minios-linux/minios-live/wiki"
+msgstr ""
+"Se ativado, os logs do sistema serão copiados para um pen drive conectado no "
+"desligamento.\n"
+"\n"
+"• Útil para diagnósticos e solução de problemas.\n"
+"\n"
+"Ver: https://github.com/minios-linux/minios-live/wiki"
+
+#: lib/main_configurator.py:245
+msgid ""
+"If you are unsure about a field, do not change it. Incorrect settings may "
+"prevent the system from booting."
+msgstr ""
+"Se você não tiver certeza sobre um campo, não o altere. Configurações "
+"incorretas podem impedir o sistema de iniciar."
+
+#: lib/main_configurator.py:351
+msgid "Save"
+msgstr "Salvar"

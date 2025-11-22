@@ -1,0 +1,664 @@
+# Russian translations for minios-installer package.
+# Copyright (C) 2025 MiniOS Linux.
+# This file is distributed under the same license as the minios-installer package.
+# crims0n <crims0n@minios.dev>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: minios-installer 2.2\n"
+"Report-Msgid-Bugs-To: support@minios.dev\n"
+"POT-Creation-Date: 2025-10-06 23:11+0300\n"
+"PO-Revision-Date: 2025-05-26 17:08+0300\n"
+"Last-Translator: crims0n <crims0n@minios.dev>, 2025.\n"
+"Language-Team: Russian <gnu@d07.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: lib/format_utils.py:45 lib/format_utils.py:47 lib/format_utils.py:49
+msgid "Failed to format "
+msgstr "Не удалось отформатировать "
+
+#: lib/format_utils.py:51
+msgid "Failed to format EFI "
+msgstr "Не удалось отформатировать EFI "
+
+#: lib/bootloader_utils.py:74 lib/main_installer.py:624 lib/copy_utils.py:61
+#: lib/copy_utils.py:62
+msgid "Installation canceled by user."
+msgstr "Установка отменена пользователем."
+
+#: lib/bootloader_utils.py:79
+#, python-brace-format
+msgid "Detected bootloader type: {type}"
+msgstr "Обнаружен тип загрузчика: {type}"
+
+#: lib/bootloader_utils.py:95
+msgid "Installing GRUB bootloader..."
+msgstr "Установка загрузчика GRUB..."
+
+#: lib/bootloader_utils.py:103
+msgid "GRUB core.img not found in image"
+msgstr "Файл GRUB core.img не найден в образе"
+
+#: lib/bootloader_utils.py:106
+msgid "GRUB boot.img not found in image"
+msgstr "Файл GRUB boot.img не найден в образе"
+
+#: lib/bootloader_utils.py:114
+msgid "Installed GRUB boot.img to MBR"
+msgstr "GRUB boot.img установлен в MBR"
+
+#: lib/bootloader_utils.py:121
+msgid "Installed GRUB core.img"
+msgstr "GRUB core.img установлен"
+
+#: lib/bootloader_utils.py:127
+msgid "GRUB bootloader installation completed"
+msgstr "Установка загрузчика GRUB завершена"
+
+#: lib/bootloader_utils.py:130
+#, python-brace-format
+msgid "Error installing GRUB bootloader: {error}"
+msgstr "Ошибка при установке загрузчика GRUB: {error}"
+
+#: lib/bootloader_utils.py:139
+msgid "Using native SYSLINUX bootloader"
+msgstr "Используется собственный загрузчик SYSLINUX"
+
+#: lib/bootloader_utils.py:140 lib/bootloader_utils.py:152
+#, python-brace-format
+msgid "Entering bootloader directory: {boot_dir}"
+msgstr "Переход в каталог загрузчика: {boot_dir}"
+
+#: lib/bootloader_utils.py:151
+msgid "Using SYSLINUX to load GRUB"
+msgstr "Используется SYSLINUX для загрузки GRUB"
+
+#: lib/bootloader_utils.py:162
+msgid "Installing EXTLINUX bootloader..."
+msgstr "Установка загрузчика EXTLINUX..."
+
+#: lib/bootloader_utils.py:177
+msgid "Remounted boot directory with exec."
+msgstr "Каталог загрузки перемонтирован с выполнением."
+
+#: lib/bootloader_utils.py:179
+msgid "Failed to remount boot directory; proceeding."
+msgstr "Не удалось перемонтировать загрузочный каталог; продолжение."
+
+#: lib/bootloader_utils.py:181
+msgid "Made extlinux executable."
+msgstr "Сделан extlinux исполняемым."
+
+#: lib/bootloader_utils.py:189
+#, python-brace-format
+msgid "Copied extlinux to fallback: {fallback_name}"
+msgstr "Extlinux скопирован в резервный: {fallback_name}"
+
+#: lib/bootloader_utils.py:207
+#, python-brace-format
+msgid "extlinux install failed (code {code}), trying fallback in /tmp..."
+msgstr ""
+"Установка extlinux не удалась (код {code}), попытка резервного в /tmp..."
+
+#: lib/bootloader_utils.py:222
+#, python-brace-format
+msgid "Error installing boot loader (fallback code {code})."
+msgstr "Ошибка установки загрузчика (код резервного {code})."
+
+#: lib/bootloader_utils.py:225
+msgid "Boot loader installation succeeded via fallback."
+msgstr ""
+"Установка загрузчика успешно завершена с использованием резервного метода."
+
+#: lib/bootloader_utils.py:227
+#, python-brace-format
+msgid "Ran extlinux installer (code {code})."
+msgstr "Запущен установщик extlinux (код {code})."
+
+#: lib/bootloader_utils.py:239
+msgid "Removed fallback binary: extlinux.exe."
+msgstr "Резервный бинарный файл удален: extlinux.exe."
+
+#: lib/bootloader_utils.py:243
+msgid "EXTLINUX bootloader installation completed"
+msgstr "Установка загрузчика EXTLINUX завершена"
+
+#: lib/bootloader_utils.py:255
+#, python-brace-format
+msgid "Wrote MBR to {device}."
+msgstr "Записан MBR на {device}."
+
+#: lib/bootloader_utils.py:265
+#, python-brace-format
+msgid "Error: Could not extract partition number from {primary}"
+msgstr "Ошибка: не удалось определить номер раздела из {primary}"
+
+#: lib/bootloader_utils.py:285
+#, python-brace-format
+msgid "Set partition active: {primary}"
+msgstr "Раздел отмечен как активный: {primary}."
+
+#: lib/bootloader_utils.py:287
+#, python-brace-format
+msgid "Error: sfdisk returned exit code {code}"
+msgstr "Ошибка: sfdisk завершился с кодом возврата {code}"
+
+#: lib/bootloader_utils.py:290
+msgid "Error: sfdisk command timed out"
+msgstr "Ошибка: команда sfdisk превысила время ожидания"
+
+#: lib/bootloader_utils.py:292
+msgid "Error: sfdisk not found - install util-linux package"
+msgstr "Ошибка: sfdisk не найден — установите пакет util-linux"
+
+#: lib/bootloader_utils.py:294
+#, python-brace-format
+msgid "Error running sfdisk: {error}"
+msgstr "Ошибка при выполнении sfdisk: {error}"
+
+#: lib/mount_utils.py:29
+msgid "Destination "
+msgstr "Путь назначения "
+
+#: lib/mount_utils.py:29
+msgid " is already mounted."
+msgstr " уже смонтирован."
+
+#: lib/mount_utils.py:38
+msgid "Could not determine filesystem type of "
+msgstr "Не удалось определить тип файловой системы для "
+
+#: lib/mount_utils.py:42
+msgid "Failed to mount "
+msgstr "Не удалось смонтировать "
+
+#: lib/main_installer.py:170
+msgid "USB Device"
+msgstr "USB-устройство"
+
+#: lib/main_installer.py:172
+msgid "SATA Drive"
+msgstr "SATA-накопитель"
+
+#: lib/main_installer.py:174
+msgid "IDE Drive"
+msgstr "IDE-накопитель"
+
+#: lib/main_installer.py:176
+msgid "NVMe SSD"
+msgstr "NVMe SSD"
+
+#: lib/main_installer.py:178
+msgid "MMC/SD Card"
+msgstr "MMC/SD-карта"
+
+#: lib/main_installer.py:180
+msgid "Hard Disk Drive"
+msgstr "Жесткий диск"
+
+#: lib/main_installer.py:220
+msgid "Warning: This appears to be a system disk"
+msgstr "Предупреждение: это, похоже, системный диск"
+
+#: lib/main_installer.py:224
+msgid "Warning: This disk has mounted partitions"
+msgstr "Предупреждение: на этом диске есть смонтированные разделы"
+
+#: lib/main_installer.py:257
+msgid "Please select a target disk and filesystem:"
+msgstr "Пожалуйста, выберите целевой диск и файловую систему:"
+
+#: lib/main_installer.py:266
+msgid "Select Target Disk:"
+msgstr "Выберите целевой диск:"
+
+#: lib/main_installer.py:283
+msgid "Select Filesystem Type:"
+msgstr "Выберите тип файловой системы:"
+
+#: lib/main_installer.py:297
+msgid ""
+"<b>ext4</b> (best choice)\n"
+"  + Stable and has journaling.\n"
+"  + Fast performance with large-file support.\n"
+"  - Not compatible with Windows, Mac and most hardware devices.\n"
+"\n"
+"<b>ext2</b>\n"
+"  + Minimal write overhead preserves flash lifespan.\n"
+"  + Simple structure is easy to recover.\n"
+"  - No journaling increases risk of data loss if unplugged.\n"
+"  - Not compatible with Windows, Mac and most hardware devices.\n"
+"\n"
+"<b>btrfs</b>\n"
+"  + Snapshots enable easy rollback.\n"
+"  + Built-in compression saves space.\n"
+"  - Complex configuration may be needed.\n"
+"  - Additional metadata can slow transfers on USB drives.\n"
+"  - Not compatible with Windows, Mac and most hardware devices.\n"
+"\n"
+"<b>FAT32</b>\n"
+"  + Universally readable by Windows, macOS, and Linux.\n"
+"  + No extra drivers or setup needed.\n"
+"  - 4 GiB file size limit.\n"
+"  - No journaling increases risk of data loss if unplugged.\n"
+"  - FUSE-based persistence reduce performance.\n"
+"\n"
+"<b>NTFS</b>\n"
+"  + Supports large files and has journaling.\n"
+"  + Native Windows support; fast read/write in Linux via ntfs3.\n"
+"  - Not compatible with Mac and most hardware devices.\n"
+"  - FUSE-based persistence reduce performance.\n"
+"\n"
+msgstr ""
+"<b>ext4</b> (лучший выбор)\n"
+"  + Стабильная и поддерживает журналирование.\n"
+"  + Высокая производительность и поддержка больших файлов.\n"
+"  - Не совместима с Windows, Mac и большинством устройств.\n"
+"\n"
+"<b>ext2</b>\n"
+"  + Минимальная нагрузка на запись, продлевает срок службы флеш-памяти.\n"
+"  + Простая структура, легко восстановить.\n"
+"  - Нет журналирования, повышен риск потери данных при отключении.\n"
+"  - Не совместима с Windows, Mac и большинством устройств.\n"
+"\n"
+"<b>btrfs</b>\n"
+"  + Снимки позволяют легко откатываться к предыдущему состоянию.\n"
+"  + Встроенное сжатие экономит место.\n"
+"  - Может потребоваться сложная настройка.\n"
+"  - Дополнительные метаданные могут замедлять работу на USB-накопителях.\n"
+"  - Не совместима с Windows, Mac и большинством устройств.\n"
+"\n"
+"<b>FAT32</b>\n"
+"  + Универсально читается Windows, macOS и Linux.\n"
+"  + Не требует дополнительных драйверов или настроек.\n"
+"  - Ограничение размера файла 4 ГиБ.\n"
+"  - Нет журналирования, повышен риск потери данных при отключении.\n"
+"  - Производительность с постоянством на базе FUSE снижена.\n"
+"\n"
+"<b>NTFS</b>\n"
+"  + Поддерживает большие файлы и журналирование.\n"
+"  + Родная поддержка в Windows; быстрая работа в Linux через ntfs3.\n"
+"  - Не совместима с Mac и большинством устройств.\n"
+"  - Производительность с постоянством на базе FUSE снижена.\n"
+"\n"
+
+#: lib/main_installer.py:328
+msgid "Boot Menu Language:"
+msgstr "Язык загрузочного меню:"
+
+#: lib/main_installer.py:338
+msgid "Multilingual menu"
+msgstr "Многоязычное меню"
+
+#: lib/main_installer.py:362
+msgid "Install"
+msgstr "Установить"
+
+#: lib/main_installer.py:372
+msgid "Configure MiniOS before installation"
+msgstr "Настроить MiniOS перед установкой"
+
+#: lib/main_installer.py:440 lib/main_installer.py:468
+msgid "WARNING: This action is irreversible!"
+msgstr "ВНИМАНИЕ: это действие необратимо!"
+
+#: lib/main_installer.py:441 lib/main_installer.py:483
+msgid "Device information:"
+msgstr "Информация об устройстве:"
+
+#: lib/main_installer.py:442 lib/main_installer.py:510
+msgid "What will be erased:"
+msgstr "Что будет стерто:"
+
+#: lib/main_installer.py:450
+msgid "selected device"
+msgstr "выбранное устройство"
+
+#: lib/main_installer.py:522
+msgid "Files, documents, and applications"
+msgstr "Файлы, документы и приложения"
+
+#: lib/main_installer.py:523
+msgid "Operating systems"
+msgstr "Операционные системы"
+
+#: lib/main_installer.py:524
+msgid "Personal data and settings"
+msgstr "Личные данные и настройки"
+
+#: lib/main_installer.py:525
+msgid "All partitions and file systems"
+msgstr "Все разделы и файловые системы"
+
+#: lib/main_installer.py:552
+msgid "Go Back"
+msgstr "Назад"
+
+#: lib/main_installer.py:557
+msgid "Continue"
+msgstr "Продолжить"
+
+#: lib/main_installer.py:574
+msgid "Preparing to install..."
+msgstr "Подготовка к установке..."
+
+#: lib/main_installer.py:584 lib/main_installer.py:614
+msgid "Show Log"
+msgstr "Показать журнал"
+
+#: lib/main_installer.py:589
+msgid "Cancel"
+msgstr "Отмена"
+
+#: lib/main_installer.py:610
+msgid "Hide Log"
+msgstr "Скрыть журнал"
+
+#: lib/main_installer.py:623
+msgid "Installation canceled."
+msgstr "Установка отменена."
+
+#: lib/main_installer.py:630
+msgid "Restart Installation"
+msgstr "Перезапустить установку"
+
+#: lib/main_installer.py:678 lib/main_installer.py:760
+msgid "Unmounting disk..."
+msgstr "Размонтирование диска..."
+
+#: lib/main_installer.py:679
+msgid "Erasing disk..."
+msgstr "Стирание диска..."
+
+#: lib/main_installer.py:680
+msgid "Partitioning disk..."
+msgstr "Разметка диска..."
+
+#: lib/main_installer.py:681
+msgid "Formatting partitions..."
+msgstr "Форматирование разделов..."
+
+#: lib/main_installer.py:682
+msgid "Mounting partition..."
+msgstr "Монтирование раздела..."
+
+#: lib/main_installer.py:696
+msgid "Error at step: "
+msgstr "Ошибка на шаге: "
+
+#: lib/main_installer.py:698 lib/main_installer.py:712
+#: lib/main_installer.py:737 lib/main_installer.py:756
+#: lib/main_installer.py:770
+msgid "Installation failed: "
+msgstr "Установка не удалась: "
+
+#: lib/main_installer.py:702
+msgid "Mounting EFI partition..."
+msgstr "Монтирование раздела EFI..."
+
+#: lib/main_installer.py:710
+msgid "Error mounting EFI partition:"
+msgstr "Ошибка при монтировании раздела EFI:"
+
+#: lib/main_installer.py:716
+msgid "Copying files..."
+msgstr "Копирование файлов..."
+
+#: lib/main_installer.py:720
+msgid "Cannot find MiniOS image."
+msgstr "Не удалось найти образ MiniOS."
+
+#: lib/main_installer.py:725
+msgid "Copying EFI files to root..."
+msgstr "Копирование EFI-файлов в корень..."
+
+#: lib/main_installer.py:728
+msgid "Copying EFI files to ESP..."
+msgstr "Копирование EFI-файлов на ESP..."
+
+#: lib/main_installer.py:735
+msgid "Error during file copy:"
+msgstr "Ошибка при копировании файлов:"
+
+#: lib/main_installer.py:741
+msgid "Setting up bootloader..."
+msgstr "Настройка загрузчика..."
+
+#: lib/main_installer.py:754
+msgid "Error setting up bootloader:"
+msgstr "Ошибка при настройке загрузчика:"
+
+#: lib/main_installer.py:768
+msgid "Error during unmount:"
+msgstr "Ошибка при размонтировании:"
+
+#: lib/main_installer.py:772
+msgid "Installation complete!"
+msgstr "Установка завершена!"
+
+#: lib/main_installer.py:785
+msgid "Installation Error"
+msgstr "Ошибка установки"
+
+#: lib/main_installer.py:803
+msgid "Config file not found"
+msgstr "Файл конфигурации не найден"
+
+#: lib/main_installer.py:805
+msgid "Standard config file not found at {}."
+msgstr "Стандартный файл конфигурации не найден в {}."
+
+#: lib/main_installer.py:824
+msgid "Launch Error"
+msgstr "Ошибка запуска"
+
+#: lib/main_installer.py:851
+msgid "Root Privileges Required"
+msgstr "Требуются права администратора"
+
+#: lib/main_installer.py:853
+msgid "This installer must be run as root."
+msgstr "Этот установщик должен быть запущен от имени root."
+
+#: lib/disk_utils.py:89
+msgid "Failed to retrieve disk list."
+msgstr "Не удалось получить список дисков."
+
+#: lib/disk_utils.py:104
+msgid "Failed to detect live media device"
+msgstr "Не удалось обнаружить устройство загрузочного носителя"
+
+#: lib/disk_utils.py:109
+msgid "Failed to detect root disk"
+msgstr "Не удалось обнаружить корневой диск"
+
+#: lib/disk_utils.py:176
+msgid "Failed to get disk size."
+msgstr "Не удалось определить размер диска."
+
+#: lib/disk_utils.py:183
+msgid "Could not parse disk size."
+msgstr "Не удалось распознать размер диска."
+
+#: lib/disk_utils.py:195
+msgid "Failed to set GPT label on "
+msgstr "Не удалось установить метку GPT на "
+
+#: lib/disk_utils.py:199 lib/disk_utils.py:213 lib/disk_utils.py:226
+msgid "Failed to create primary partition on "
+msgstr "Не удалось создать основной раздел на "
+
+#: lib/disk_utils.py:203
+msgid "Failed to create EFI partition on "
+msgstr "Не удалось создать раздел EFI на "
+
+#: lib/disk_utils.py:206 lib/disk_utils.py:220
+msgid "Failed to set boot flag."
+msgstr "Не удалось установить загрузочный флаг."
+
+#: lib/disk_utils.py:209 lib/disk_utils.py:223
+msgid "Failed to set MSDOS label on "
+msgstr "Не удалось установить метку MSDOS на "
+
+#: lib/disk_utils.py:217
+msgid "Failed to create second partition on "
+msgstr "Не удалось создать второй раздел на "
+
+#: lib/disk_utils.py:240
+msgid "Failed to erase "
+msgstr "Не удалось стереть "
+
+#: lib/copy_utils.py:71
+msgid "Copying MiniOS files: "
+msgstr "Копирование файлов MiniOS: "
+
+#: lib/copy_utils.py:73
+msgid "Copied file: "
+msgstr "Скопирован файл: "
+
+#: lib/copy_utils.py:80
+msgid "Created directory: "
+msgstr "Создан каталог: "
+
+#: lib/copy_utils.py:109
+msgid "Removed old symlink/file: "
+msgstr "Удалена старая символьная ссылка/файл: "
+
+#: lib/copy_utils.py:115
+msgid "Created Ventoy compatibility symlinks:"
+msgstr "Созданы символьные ссылки для совместимости с Ventoy:"
+
+#: lib/copy_utils.py:141
+msgid "Copied EFI file: "
+msgstr "Скопирован EFI-файл: "
+
+#: lib/copy_utils.py:284
+#, python-brace-format
+msgid "Warning: No translations found for {lang}, using English fallback"
+msgstr ""
+"Предупреждение: переводы для {lang} не найдены, используется английский "
+"вариант"
+
+#: lib/copy_utils.py:290
+msgid "Error: grub.template.cfg template not found"
+msgstr "Ошибка: шаблон grub.template.cfg не найден"
+
+#: lib/copy_utils.py:330
+#, python-brace-format
+msgid "Using localized theme: {theme}"
+msgstr "Используется локализованная тема: {theme}"
+
+#: lib/copy_utils.py:332
+#, python-brace-format
+msgid "Localized theme not found for {lang}, using default"
+msgstr ""
+"Локализованная тема для {lang} не найдена, используется тема по умолчанию"
+
+#: lib/copy_utils.py:338
+#, python-brace-format
+msgid "Generated localized GRUB config for {lang}"
+msgstr "Создан локализованный конфиг GRUB для языка: {lang}"
+
+#: lib/copy_utils.py:342
+#, python-brace-format
+msgid "Error generating localized GRUB config: {error}"
+msgstr "Ошибка при создании локализованного конфига GRUB: {error}"
+
+#: lib/copy_utils.py:358
+msgid "SYSLINUX directory not found, skipping SYSLINUX configuration"
+msgstr "Каталог SYSLINUX не найден, пропускаем настройку SYSLINUX"
+
+#: lib/copy_utils.py:367 lib/copy_utils.py:371
+msgid "Using multilingual SYSLINUX menu"
+msgstr "Используется многоязычное меню SYSLINUX"
+
+#: lib/copy_utils.py:369
+msgid "Error copying multilingual SYSLINUX config: "
+msgstr "Ошибка при копировании многоязычной конфигурации SYSLINUX: "
+
+#: lib/copy_utils.py:383
+msgid "Using localized SYSLINUX configuration for: "
+msgstr "Используется локализованная конфигурация SYSLINUX для: "
+
+#: lib/copy_utils.py:385
+msgid "Error copying localized SYSLINUX config: "
+msgstr "Ошибка при копировании локализованной конфигурации SYSLINUX: "
+
+#: lib/copy_utils.py:392
+msgid "Localized SYSLINUX config not found for "
+msgstr "Локализованная конфигурация SYSLINUX не найдена для "
+
+#: lib/copy_utils.py:392
+msgid ", using English"
+msgstr ", используется английский вариант"
+
+#: lib/copy_utils.py:394
+msgid "Error copying English SYSLINUX config: "
+msgstr "Ошибка при копировании английской конфигурации SYSLINUX: "
+
+#: lib/copy_utils.py:396
+msgid "Warning: No localized SYSLINUX configurations found"
+msgstr "Предупреждение: локализованные конфигурации SYSLINUX не найдены"
+
+#: lib/copy_utils.py:398
+msgid "SYSLINUX lang directory not found, keeping default configuration"
+msgstr ""
+"Каталог языков SYSLINUX не найден, сохраняется конфигурация по умолчанию"
+
+#: lib/copy_utils.py:410
+msgid "GRUB directory not found, skipping GRUB boot menu configuration"
+msgstr "Каталог GRUB не найден, пропускаем настройку загрузочного меню GRUB"
+
+#: lib/copy_utils.py:418
+msgid "multilingual menu"
+msgstr "многоязычное меню"
+
+#: lib/copy_utils.py:422
+#, python-brace-format
+msgid "Applied {config} GRUB boot menu from {source}"
+msgstr "Применено {config} загрузочное меню GRUB из {source}"
+
+#: lib/copy_utils.py:425
+#, python-brace-format
+msgid ""
+"Warning: {config} configuration file not found, keeping original grub.cfg"
+msgstr ""
+"Предупреждение: файл конфигурации {config} не найден, оставляем оригинальный "
+"grub.cfg"
+
+#: lib/copy_utils.py:431
+#, python-brace-format
+msgid "Generating localized GRUB menu for language: {lang}"
+msgstr "Генерация локализованного меню GRUB для языка: {lang}"
+
+#: lib/copy_utils.py:434
+#, python-brace-format
+msgid "Applied {lang} GRUB boot menu"
+msgstr "Применено загрузочное меню GRUB для языка: {lang}"
+
+#: lib/copy_utils.py:437
+#, python-brace-format
+msgid "Failed to generate {lang} config, falling back to template"
+msgstr "Не удалось создать конфигурацию для языка {lang}, используется шаблон"
+
+#: lib/copy_utils.py:441
+msgid "Applied template GRUB boot menu as fallback"
+msgstr ""
+"Применено загрузочное меню GRUB из шаблона в качестве резервного варианта"
+
+#: lib/copy_utils.py:443
+msgid "Warning: No fallback configuration available, keeping original grub.cfg"
+msgstr ""
+"Предупреждение: резервная конфигурация недоступна, сохраняется оригинальный "
+"grub.cfg"
+
+#~ msgid "SYSLINUX configuration already exists"
+#~ msgstr "Конфигурация SYSLINUX уже существует"
+
+#~ msgid "Preparing bootloader installation..."
+#~ msgstr "Подготовка установки загрузчика..."
